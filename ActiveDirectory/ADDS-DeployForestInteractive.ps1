@@ -10,6 +10,8 @@
 ########################################################################################
 # Active Directory Domain Services (ADDS) -- Deploy new AD forest (interactive)
 ########################################################################################
+# Define variables below.
+########################################################################################
 
 $domainName = "contoso.com"
 ## Specifies the fully qualified domain name (FQDN) for the root (first) domain in the forest.
@@ -52,6 +54,8 @@ $sysvolPath = "C:\Windows\SYSVOL"
 ## computer where the Sysvol file will be written. For example, C:\Logs\SYSVOL. The default
 ## path if no other path is specified with this parameter is %SYSTEMROOT%\SYSVOL.
 
+########################################################################################
+# Execute code below.
 ########################################################################################
 
 Import-Module ServerManager
